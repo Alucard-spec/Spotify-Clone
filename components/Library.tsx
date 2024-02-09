@@ -25,7 +25,7 @@ const Library:React.FC<LibraryProps> = ({songs}) => {
             return authModal.onOpen();
         }
 
-    //TODO = Check for subscription
+   
         return uploadModal.onOpen();
     };
   return (

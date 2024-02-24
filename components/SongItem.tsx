@@ -32,9 +32,10 @@ const SongItem: React.FC<SongItemProps> = ({
         rounded-md 
         overflow-hidden 
         gap-x-4 
-        bg-neutral-400/5 
+        bg-neutral-400/5
         cursor-pointer 
-        hover:bg-neutral-400/10 
+        hover:bg-white 
+        hover:text-black
         transition 
         p-3
       "
@@ -57,12 +58,13 @@ const SongItem: React.FC<SongItemProps> = ({
         />
       </div>
       <div className="flex flex-col items-start w-full pt-4 gap-y-1">
-        <p className="font-semibold truncate w-full">
+        <p className="font-semibold truncate  w-full">
           {data.title}
         </p>
         <p 
           className="
-            text-neutral-400 
+           text-neutral-500
+           font-bold
             text-sm 
             pb-4 
             w-full 

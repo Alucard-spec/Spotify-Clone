@@ -28,7 +28,10 @@ const MediaItem:React.FC<MediaItemProps> = ({data,onClick}) => {
           onClick={handleClick}
           className="
             flex 
-            items-center 
+            items-center
+            hover:text-black
+            text-white
+            hover:bg-white 
             gap-x-3 
             cursor-pointer 
             hover:bg-neutral-800/50 
@@ -54,8 +57,8 @@ const MediaItem:React.FC<MediaItemProps> = ({data,onClick}) => {
             />
           </div>
           <div className="flex flex-col gap-y-1 overflow-hidden">
-            <p className="text-white truncate">{data.title}</p>
-            <p className="text-neutral-400 text-sm truncate">
+            <p className="truncate">{data.title}</p>
+            <p className="text-neutral-500 text-sm truncate">
               By {data.author}
             </p>
           </div>
